@@ -1,0 +1,12 @@
+- name: Cambiar el bit de forwarding
+  sysctl:
+    name: net.ipv4.ip_forward
+    value: "1"
+    state: present
+    reload: yes
+  
+- name: Copiar el /etc/network/interfaces - Plantilla
+  template:
+    src: interfaces
+    dest: /etc/network/interfaces
+    mode: 0644

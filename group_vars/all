@@ -1,0 +1,27 @@
+#router
+router_address: 10.0.0.1
+router_netmask: 255.255.255.0
+direccion_red: 10.0.0.0/24
+interfaz_salida: enp1s0
+web_address: 10.0.0.2
+
+#web 
+bd_name: wordpress_bd
+bd_user: wordpress_user
+bd_pass: asdasd
+interfaz_cliente: enp1s0
+
+#dhcp
+if_red_muy_aislada: enp7s0
+nombre_reserva: web
+mac_reserva: 52:54:00:ca:6b:7e
+fixed_address: 10.0.0.2
+dhcp_subnet: 10.0.0.0 
+dhcp_netmask: 255.255.255.0
+default_lease_time: 3600
+max_lease_time: 3600
+range: 10.0.0.100 10.0.0.110
+option_subnet_mask: 255.255.255.0
+option_broadcast_address: 10.0.0.255
+option_routers: 10.0.0.1
+option_domain_name_servers: 8.8.8.8, 8.8.4.4

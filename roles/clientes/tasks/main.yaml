@@ -1,0 +1,5 @@
+- name: Copiar el interfaces de los cliente - Plantilla
+  template:
+    src: interfaces
+    dest: /etc/network/interfaces
+    mode: 0644

@@ -1,0 +1,11 @@
+- name: Asegurarse de que apache2 está instalado
+  apt:
+    pkg: apache2
+
+- name: Copiar el index.html - Plantilla
+  template: 
+    src: index.j2
+    dest: /var/www/html/index.html
+    owner: www-data
+    group: www-data
+    mode: 0644

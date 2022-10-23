@@ -1,0 +1,17 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Prueba Ansible</title> 
+</head>
+
+<body>
+   <h1>Gathering Facts</h1>
+  <p>Este ordenador se llama: {{ ansible_hostname }}</p>
+  <p>SO: {{ansible_distribution}} {{ansible_distribution_release}} </p>
+  <h1>Variables declaradas por el usuario a nivel de grupo</h1>
+  <p>Nombre de la bd: {{bd_name}}</p>
+  <p>Usuario de la bd: {{bd_user}}</p>
+  <h1>Variables declaradas por el usuario a nivel de nodo</h1>
+  <p>IP: {{ansible_ssh_host}}</p>
+</body>
+</html>
